@@ -1,0 +1,49 @@
+body {
+  background-color: grey;
+  font-family: Verdana, sans-serif;
+}
+
+.container {
+  margin: 20px auto;
+  background-color: white;
+  padding: 30px;
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-top: 60px;
+}
+
+input[type='text'] {
+  margin: 10px auto;
+  display: block;
+  width: 80%;
+  height: 30px;
+}
+
+button[type='submit'] {
+  margin: 30px auto;
+  display: block;
+}
+
+span {
+  margin: 0 10px 0 0;
+}
+
+button:not(button[type='submit']) {
+  margin: 0 10px;
+  width: 80px;
+}
+
+.todo-item {
+  display: flex;
+  margin: 12px 0;
+  justify-content: space-between;
+}
