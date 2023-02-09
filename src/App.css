@@ -7,7 +7,7 @@ body {
   margin: 20px auto;
   background-color: white;
   padding: 30px;
-  width: 500px;
+  width: 800px;
   border: 2px solid black;
   border-radius: 10px;
 }
@@ -39,11 +39,22 @@ span {
 
 button:not(button[type='submit']) {
   margin: 0 10px;
-  width: 80px;
+  width: auto;
 }
 
 .todo-item {
   display: flex;
   margin: 12px 0;
   justify-content: space-between;
+}
+
+.todo-list {
+  margin-bottom: 50px;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
 }
