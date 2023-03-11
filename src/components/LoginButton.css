@@ -1,9 +1,10 @@
 .loginButton {
-  background-color: rgb(155, 155, 216);
-  color: white;
+  background-color: rgb(246, 246, 249);
+  color: black;
   padding: 15px;
+  width: 50px;
   border-radius: 5px;
   border: none;
-  box-shadow: 2px 1px 1px grey;
+  box-shadow: 3px 3px rgb(177, 176, 176);
   font-weight: bold;
 }

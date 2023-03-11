@@ -1,11 +1,12 @@
 .appName {
   color: #fff;
+  font-family: 'Nunito', sans-serif;
 }
 .logoutBtn {
   margin: auto;
 }
 .userInfo {
-  background-color: #d9d9d9;
+  background-color: #e4c9c9;
   box-shadow: 5px 0px 0px grey;
   width: 35%;
   padding: 20px;
@@ -15,9 +16,19 @@
 
 .appName {
   display: block;
-  padding: 10px;
+  padding: 0px;
   margin: 0;
   margin-bottom: 5px;
-  background-color: white;
+  background-color: rgb(250, 248, 247);
   color: black;
+  border-radius: 15px;
+}
+
+blockquote {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(250, 248, 247);
+  text-align: center;
 }

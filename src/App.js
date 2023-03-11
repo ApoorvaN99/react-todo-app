@@ -7,9 +7,14 @@ export default function App() {
     <>
       <nav className="navbar bg-dark">
         <div className="container-fluid">
-          <span className="appName">Eat that frog!</span>
+          <h1 className="appName">EAT THAT FROG!</h1>
         </div>
       </nav>
+      <blockquote>
+        “If you have to eat two frogs, eat the ugliest one first. This is
+        another way of saying that if you have two important tasks before you,
+        start with the biggest, hardest, and most important task first.”
+      </blockquote>
       <LoginButton />
       <LogoutButton />
     </>

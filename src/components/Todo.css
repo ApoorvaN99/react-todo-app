@@ -1,0 +1,13 @@
+.todo-item button {
+  background-color: rgb(246, 246, 249);
+  color: black;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 3px 3px rgb(177, 176, 176);
+}
+
+.todo-item {
+  padding: 10px;
+  border-bottom: 0.5px solid rgb(203, 202, 202);
+  border-radius: 20px;
+}

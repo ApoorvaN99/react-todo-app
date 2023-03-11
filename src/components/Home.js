@@ -42,7 +42,7 @@ export default function Home() {
       <h1 className="heading">THINGS TO DO</h1>
       <FormTodo addTodo={addTodo} />
       <section>
-        <h3>Things left to be done:</h3>
+        <h3>Things left to be done</h3>
         <div className="todo-list">
           {todos.map((todo, i) =>
             todo.isDone === false ? (
@@ -59,7 +59,7 @@ export default function Home() {
       </section>
 
       <section>
-        <h3>Things taken care of:</h3>
+        <h3>Things taken care of</h3>
         <div className="completed-tasks-list">
           {todos.map((task, i) =>
             task.isDone === true ? (
