@@ -48,6 +48,15 @@ button:not(button[type='submit']) {
   justify-content: space-between;
 }
 
+.todo-item #handle {
+  color: grey;
+  background-color: aliceblue;
+}
+
+.todo-item #handle:hover {
+  cursor: pointer;
+}
+
 .todo-list {
   margin-bottom: 50px;
 }

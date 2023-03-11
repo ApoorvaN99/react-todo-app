@@ -1,15 +1,22 @@
+import Draggable from 'react-draggable';
+
 export default function Todo({ todo, index, markTodo, removeTodo }) {
   return (
-    <div className="todo-item">
-      <span>{todo.text}</span>
-      <div>
-        <button id="mark-todo" onClick={() => markTodo(index)}>
-          ✓
-        </button>
-        <button id="remove-todo" onClick={() => removeTodo(index)}>
-          ✕
-        </button>
+    <Draggable axis="y" handle="#handle">
+      <div className="todo-item">
+        <span>
+          <span id="handle">::</span>
+          {todo.text}
+        </span>
+        <div>
+          <button id="mark-todo" onClick={() => markTodo(index)}>
+            ✓
+          </button>
+          <button id="remove-todo" onClick={() => removeTodo(index)}>
+            ✕
+          </button>
+        </div>
       </div>
-    </div>
+    </Draggable>
   );
 }

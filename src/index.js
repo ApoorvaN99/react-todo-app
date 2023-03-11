@@ -7,9 +7,10 @@ import { Auth0Provider } from '@auth0/auth0-react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  //gmail id: main, app: My App
   <Auth0Provider
-    domain="dev-tavoe1c2wiahet2r.us.auth0.com"
-    clientId="oISMo2IgPEFX870uXG4sIIcZMPJIdkqG"
+    domain="dev-dvh6xp4dy7bgzxtd.us.auth0.com"
+    clientId="xzrYlWKEdjYaOh3AjLP5GHiBzJjFr0Yh"
     redirectUri={window.location.origin}
   >
     <App />
