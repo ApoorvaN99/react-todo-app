@@ -31,11 +31,9 @@ export default function Todo({ todo, index, markTodo, removeTodo }) {
   return (
     <Draggable axis="y" handle="#handle">
       <div className="todo-item">
-        <span>
-          <span id="handle"> :: </span>
-          {todo.text}
-        </span>
+        <span>{todo.text}</span>
         <div>
+          <span id="handle"> :: Reorder :: </span>
           <button
             id="mark-todo"
             onClick={(e) => {

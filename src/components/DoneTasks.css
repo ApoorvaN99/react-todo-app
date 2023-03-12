@@ -1,0 +1,21 @@
+.done-tasks-list .expand {
+  padding: 9px;
+  width: auto;
+  height: auto;
+  background-color: rgb(246, 246, 249);
+  color: black;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 3px 3px rgb(177, 176, 176);
+  position: relative;
+  display: inline-block;
+}
+
+.done-tasks-list .expand:hover {
+  background-color: rgb(193, 195, 195);
+  cursor: pointer;
+}
+
+.done-tasks-list .expand:active {
+  transform: scale(0.8);
+}

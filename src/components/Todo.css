@@ -6,8 +6,27 @@
   box-shadow: 3px 3px rgb(177, 176, 176);
 }
 
+.todo-item button:hover {
+  background-color: rgb(193, 195, 195);
+  cursor: pointer;
+}
+
+.todo-item button:active {
+  transform: scale(0.8);
+}
+
 .todo-item {
   padding: 10px;
   border-bottom: 0.5px solid rgb(203, 202, 202);
   border-radius: 20px;
+}
+
+.todo-item #handle {
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.todo-item #handle:hover {
+  background-color: rgb(207, 228, 246);
+  cursor: pointer;
 }

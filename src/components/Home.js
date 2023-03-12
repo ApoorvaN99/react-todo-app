@@ -4,6 +4,7 @@ import './Home.css';
 import { useState, useEffect, useRef } from 'react';
 import Todo from './Todo';
 import FormTodo from './FormTodo';
+import DoneTasks from './DoneTasks';
 import { ToastContainer } from 'react-toastify';
 
 export default function Home() {
@@ -73,18 +74,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="done-tasks-list">
         <h3>Things taken care of</h3>
-        <div className="completed-tasks-list" ref={parentRef}>
-          {todos.map((task, i) =>
-            task.isDone === true ? (
-              <li key={i}>
-                {task.text}
-                <span>✔</span>
-              </li>
-            ) : null
-          )}
-        </div>
+        <span>
+          <DoneTasks todos={todos} />
+        </span>
       </section>
 
       <ToastContainer />
