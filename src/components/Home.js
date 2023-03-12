@@ -1,7 +1,10 @@
+import autoAnimate from '@formkit/auto-animate';
+import confetti from 'canvas-confetti';
 import './Home.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Todo from './Todo';
 import FormTodo from './FormTodo';
+import { ToastContainer } from 'react-toastify';
 
 export default function Home() {
   const [todos, setTodos] = useState([
@@ -10,6 +13,13 @@ export default function Home() {
       isDone: false,
     },
   ]);
+  const parentRef = useRef(null);
+
+  useEffect(() => {
+    if (parentRef.current) {
+      autoAnimate(parentRef.current);
+    }
+  }, [parentRef]);
 
   useEffect(() => {
     const data = window.localStorage.getItem('TODO_APP_STATE');
@@ -25,10 +35,15 @@ export default function Home() {
     setTodos(newTodos);
   };
 
-  const markTodo = (index) => {
+  const markTodo = (e, index) => {
     let newTodos = [...todos];
     newTodos[index].isDone = true;
     setTodos(newTodos);
+    confetti({
+      particleCount: 400,
+      startVelocity: 50,
+      spread: 360,
+    });
   };
 
   const removeTodo = (index) => {
@@ -43,7 +58,7 @@ export default function Home() {
       <FormTodo addTodo={addTodo} />
       <section>
         <h3>Things left to be done</h3>
-        <div className="todo-list">
+        <div className="todo-list" ref={parentRef}>
           {todos.map((todo, i) =>
             todo.isDone === false ? (
               <Todo
@@ -60,7 +75,7 @@ export default function Home() {
 
       <section>
         <h3>Things taken care of</h3>
-        <div className="completed-tasks-list">
+        <div className="completed-tasks-list" ref={parentRef}>
           {todos.map((task, i) =>
             task.isDone === true ? (
               <li key={i}>
@@ -72,6 +87,7 @@ export default function Home() {
         </div>
       </section>
 
+      <ToastContainer />
       {/* <div>
         <button>Deleted tasks</button>
       </div> */}
