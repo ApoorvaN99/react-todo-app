@@ -37,14 +37,6 @@ export default function Todo({ todo, index, markTodo, removeTodo }) {
         </span>
         <div>
           <button
-            onClick={() => {
-              showDoneToast();
-              showDeletedToast();
-            }}
-          >
-            test
-          </button>
-          <button
             id="mark-todo"
             onClick={(e) => {
               showDoneToast();

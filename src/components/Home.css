@@ -19,7 +19,7 @@ h1 {
 }
 
 h3 {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 input[type='text'] {
@@ -27,11 +27,6 @@ input[type='text'] {
   display: block;
   width: 70%;
   height: 30px;
-}
-
-button[type='submit'] {
-  margin: 30px auto;
-  display: block;
 }
 
 span {

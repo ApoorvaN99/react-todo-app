@@ -80,7 +80,7 @@ export default function Home() {
             task.isDone === true ? (
               <li key={i}>
                 {task.text}
-                <button id="mark-todo">✓</button>
+                <span>✔</span>
               </li>
             ) : null
           )}
